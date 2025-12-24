@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Calorie Scanner</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="header">
+      <h1>Food Calorie Scanner</h1>
+      <p>Upload a food image to estimate calories</p>
+    </header>
+
+    <section class="upload-card">
+
+      <div class="image-preview">
+        <img src="assets/placeholder.png" alt="Preview" />
+      </div>
+
+      <input type="file" id="imageInput" accept="image/*" />
+
+      <button class="primary-btn" disabled>
+        Analyze Image
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="js/upload.js"></script>
+</body>
+
+</html>
