@@ -5,6 +5,7 @@ const analyzeButton = document.querySelector(".primary-btn");
 
 //listener to change
 imageInput.addEventListener("change", handleImageUpload);
+analyzeButton.addEventListener("click", analyzeImage);
 
 function handleImageUpload(event) {
   const file = event.target.files[0];
@@ -21,4 +22,8 @@ function handleImageUpload(event) {
   };
 
   reader.readAsDataURL(file);
+}
+
+function analyzeImage(event){
+    event.preventDefault();
 }
