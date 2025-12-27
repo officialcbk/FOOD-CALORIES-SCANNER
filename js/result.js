@@ -1,15 +1,7 @@
-const previewedImage = document.querySelector(".image-preview img")
+const resultImage = document.querySelector(".image-preview img");
 
-function reloadPage(event){
-  const file = event.target.files[0];
+const storedImage = sessionStorage.getItem("uploadedImage");
 
-  const reader = new FileReader();
-
-  reader.onload = function () {
-    previewedImage.src = reader.result;
-  };
-
-  reader.readAsDataURL(file);
+if (storedImage) {
+  resultImage.src = storedImage;
 }
-
-reloadPage

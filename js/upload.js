@@ -26,4 +26,7 @@ function handleImageUpload(event) {
 
 function analyzeImage(event){
     event.preventDefault();
+
+    sessionStorage.setItem("uploadedImage", previewImage.src);
+
 }
